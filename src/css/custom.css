@@ -1,0 +1,75 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --color-primary-color: #017598;
+  --color-secondary-color: #1ed7cd;
+  --color-light-blue: #05a7be;
+  --color-medium-blue: #087ea2;
+  --color-teal: #18C4B8;
+  
+  --ifm-color-primary: #017598;
+  --ifm-color-primary-dark: #01678a;
+  --ifm-color-primary-darker: #015d7c;
+  --ifm-color-primary-darkest: #015370;
+  --ifm-color-primary-light: #0183a6;
+  --ifm-color-primary-lighter: #018db4;
+  --ifm-color-primary-lightest: #0197c0;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --color-dark-theme-color: #2b2b2b;
+  --color-dark-primary-color: #2ce6d6;
+  --color-dark-secondary-color: #5af3e9;
+  --color-dark-third-color: #323232;
+  --color-dark-fourth-color: #4AC8E0;
+  --color-dark-text-color: #ffffff66;
+  --color-dark-border-color: #8080808c;
+  
+  --ifm-color-primary: #2ce6d6;
+  --ifm-color-primary-dark: #20dac9;
+  --ifm-color-primary-darker: #1ecfbf;
+  --ifm-color-primary-darkest: #18ab9d;
+  --ifm-color-primary-light: #43e9da;
+  --ifm-color-primary-lighter: #51eadd;
+  --ifm-color-primary-lightest: #76efe4;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: #2b2b2b;
+  --ifm-background-surface-color: #323232;
+}
+
+.hero--primary {
+  --ifm-hero-background-color: var(--color-primary-color);
+  --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
+}
+
+[data-theme='dark'] .hero--primary {
+  --ifm-hero-background-color: var(--color-dark-third-color);
+  --ifm-hero-text-color: var(--color-dark-primary-color);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--color-medium-blue);
+}
+
+[data-theme='dark'] .footer--dark {
+  --ifm-footer-background-color: var(--color-dark-theme-color);
+}
+
+.button.button--secondary {
+  background-color: var(--color-secondary-color);
+  border-color: var(--color-secondary-color);
+  color: white;
+}
+
+[data-theme='dark'] .button.button--secondary {
+  background-color: var(--color-dark-fourth-color);
+  border-color: var(--color-dark-fourth-color);
+}
