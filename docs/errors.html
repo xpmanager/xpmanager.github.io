@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-errors/error-codes" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Exit Codes | XPManager</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://xpmanager.github.io/docs/errors"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Exit Codes | XPManager"><meta data-rh="true" name="description" content="Exit Codes:"><meta data-rh="true" property="og:description" content="Exit Codes:"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://xpmanager.github.io/docs/errors"><link data-rh="true" rel="alternate" href="https://xpmanager.github.io/docs/errors" hreflang="en"><link data-rh="true" rel="alternate" href="https://xpmanager.github.io/docs/errors" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.8ae88a6f.css">
+<script src="/assets/js/runtime~main.2a0cc7f1.js" defer="defer"></script>
+<script src="/assets/js/main.3da7e3fe.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.jpg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.jpg" alt="XPManager Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.jpg" alt="XPManager Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">XPManager</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Documentation</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/xpmanager/XPManager" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a href="https://github.com/xpmanager/discussions" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub Discussions<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a href="https://github.com/xpmanager/xpmanager/issues/new?labels=enhancement" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Feature Requests<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Introduction</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/installation">Installation</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/usage">Usage Guide</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/errors">Error Codes</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/errors">Exit Codes</a></li></ul></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Error Codes</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Exit Codes</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Exit Codes</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="exit-codes">Exit Codes:<a href="#exit-codes" class="hash-link" aria-label="Direct link to Exit Codes:" title="Direct link to Exit Codes:">​</a></h2>
+<p>Exit codes are numerical values returned by a program upon completion, indicating the success or failure of the executed command.
+These codes are essential for automation, scripting, and error handling, allowing other programs or users to easily interpret the
+outcome of a command. By convention, an exit code of <code>0</code> signifies success, while any non-zero value indicates an error or failure.
+Properly defining and using exit codes ensures better usability and troubleshooting in command-line environments.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="xpmanager-exit-codes">XPManager Exit Codes:<a href="#xpmanager-exit-codes" class="hash-link" aria-label="Direct link to XPManager Exit Codes:" title="Direct link to XPManager Exit Codes:">​</a></h2>
+<p>In XManager we provide exit codes to facilitate error tracking and make integration with other tools easy. Here is a table showing the exit codes, their values ​​and descriptions:</p>
+<table><thead><tr><th>name</th><th>Exit Code</th><th>Description</th></tr></thead><tbody><tr><td><a href="#filenotfound">FileNotFound</a></td><td>50</td><td>The file you will be working on does not exist.</td></tr><tr><td><a href="#filecreate">FileCreate</a></td><td>51</td><td>Can not create the file.</td></tr><tr><td><a href="#fileopen">FileOpen</a></td><td>52</td><td>Can not open the file.</td></tr><tr><td><a href="#fileread">FileRead</a></td><td>53</td><td>Can not read the file.</td></tr><tr><td><a href="#filewrite">FileWrite</a></td><td>54</td><td>Can not write to the file.</td></tr><tr><td><a href="#fileseek">FileSeek</a></td><td>55</td><td>Can not move the file pointer.</td></tr><tr><td><a href="#fileflush">FileFlush</a></td><td>56</td><td>Can not flush the file to the disk.</td></tr><tr><td><a href="#filedelete">FileDelete</a></td><td>57</td><td>Can not delete the file.</td></tr><tr><td><a href="#filealreadyencrypted">FileAlreadyEncrypted</a></td><td>58</td><td>The file you will be working on is already encrypted.</td></tr><tr><td><a href="#filenotencrypted">FileNotEncrypted</a></td><td>59</td><td>The file you will be working on is not encrypted.</td></tr><tr><td><a href="#dirnotfound">DirNotFound</a></td><td>65</td><td>The directory you will be working on does not exist.</td></tr><tr><td><a href="#dircreate">DirCreate</a></td><td>66</td><td>Can not create the directory.</td></tr><tr><td><a href="#dirunsupported">DirUnsupported</a></td><td>67</td><td>Can not process the directory because it is not supported.</td></tr><tr><td><a href="#cannotgetdirdata">CanNotGetDirData</a></td><td>68</td><td>Can not get the directory data.</td></tr><tr><td><a href="#systemdatadirnotfound">SystemDataDirNotFound</a></td><td>69</td><td>Can not find the system data directory.</td></tr><tr><td><a href="#cannotgetfileordirtype">CanNotGetFileOrDirType</a></td><td>70</td><td>The type could not be determined whether it is file or directory.</td></tr><tr><td><a href="#cannotgetjsonobject">CanNotGetJsonObject</a></td><td>75</td><td>Can not map the json object to Value type in serde_json.</td></tr><tr><td><a href="#invalidjson">InvalidJson</a></td><td>76</td><td>The json value is invalid.</td></tr><tr><td><a href="#invalidkey">InvalidKey</a></td><td>80</td><td>Invalid encryption or decryption key.</td></tr><tr><td><a href="#invalidencryptiondata">InvalidEncryptionData</a></td><td>81</td><td>Encryption data can not be decrypted.</td></tr><tr><td><a href="#dbconnection">DBConnection</a></td><td>85</td><td>Can not connect the SQLite database file.</td></tr><tr><td><a href="#dbinsert">DBInsert</a></td><td>86</td><td>Can not insert to the database file.</td></tr><tr><td><a href="#dbcreatetable">DBCreateTable</a></td><td>87</td><td>Can not create the database table.</td></tr><tr><td><a href="#pmdatabasenotfound">PMDatabaseNotFound</a></td><td>89</td><td>Password manager database file not found.</td></tr><tr><td><a href="#pmdatabaseempty">PMDatabaseEmpty</a></td><td>90</td><td>Password manager database is empty.</td></tr><tr><td><a href="#lmdatabasenotfound">LMDatabaseNotFound</a></td><td>91</td><td>Log manager database file not found.</td></tr><tr><td><a href="#lognotfound">LogNotFound</a></td><td>92</td><td>Not found log in the database.</td></tr><tr><td><a href="#input">Input</a></td><td>95</td><td>Error input.</td></tr><tr><td><a href="#missingarg">MissingArg</a></td><td>96</td><td>Missing some args.</td></tr><tr><td><a href="#confirmationnotmatch">ConfirmationNotMatch</a></td><td>97</td><td>The confirmation code not match.</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="where">Where:<a href="#where" class="hash-link" aria-label="Direct link to Where:" title="Direct link to Where:">​</a></h2>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="filenotfound">FileNotFound<a href="#filenotfound" class="hash-link" aria-label="Direct link to FileNotFound" title="Direct link to FileNotFound">​</a></h4>
+<ul>
+<li>backup manager - restore.</li>
+<li>encryption manager - decrypt file.</li>
+<li>encryption manager - encrypt file.</li>
+<li>filelib - wipe file.</li>
+<li>filelib - copy.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="filecreate">FileCreate<a href="#filecreate" class="hash-link" aria-label="Direct link to FileCreate" title="Direct link to FileCreate">​</a></h4>
+<ul>
+<li>filelib - create file.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fileopen">FileOpen<a href="#fileopen" class="hash-link" aria-label="Direct link to FileOpen" title="Direct link to FileOpen">​</a></h4>
+<ul>
+<li>encryption manager - decrypt file.</li>
+<li>encryption manager - encrypt file.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fileread">FileRead<a href="#fileread" class="hash-link" aria-label="Direct link to FileRead" title="Direct link to FileRead">​</a></h4>
+<ul>
+<li>encryption manager - decrypt file.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="filewrite">FileWrite<a href="#filewrite" class="hash-link" aria-label="Direct link to FileWrite" title="Direct link to FileWrite">​</a></h4>
+<ul>
+<li>filelib - wipe file.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fileseek">FileSeek<a href="#fileseek" class="hash-link" aria-label="Direct link to FileSeek" title="Direct link to FileSeek">​</a></h4>
+<ul>
+<li>filelib - wipe file.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="fileflush">FileFlush<a href="#fileflush" class="hash-link" aria-label="Direct link to FileFlush" title="Direct link to FileFlush">​</a></h4>
+<ul>
+<li>filelib - wipe file.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="filedelete">FileDelete<a href="#filedelete" class="hash-link" aria-label="Direct link to FileDelete" title="Direct link to FileDelete">​</a></h4>
+<ul>
+<li>filelib - delete file.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="filealreadyencrypted">FileAlreadyEncrypted<a href="#filealreadyencrypted" class="hash-link" aria-label="Direct link to FileAlreadyEncrypted" title="Direct link to FileAlreadyEncrypted">​</a></h4>
+<ul>
+<li>password manager - encrypt.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="filenotencrypted">FileNotEncrypted<a href="#filenotencrypted" class="hash-link" aria-label="Direct link to FileNotEncrypted" title="Direct link to FileNotEncrypted">​</a></h4>
+<ul>
+<li>backup manager - backup.</li>
+<li>encryption manager - encrypt file.</li>
+<li>password manager - decrypt.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dirnotfound">DirNotFound<a href="#dirnotfound" class="hash-link" aria-label="Direct link to DirNotFound" title="Direct link to DirNotFound">​</a></h4>
+<ul>
+<li>filelib - log.</li>
+<li>filelib - dir files tree.</li>
+<li>filelib - copy.</li>
+<li>filelib - password manager.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dircreate">DirCreate<a href="#dircreate" class="hash-link" aria-label="Direct link to DirCreate" title="Direct link to DirCreate">​</a></h4>
+<ul>
+<li>filelib - create file.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dirunsupported">DirUnsupported<a href="#dirunsupported" class="hash-link" aria-label="Direct link to DirUnsupported" title="Direct link to DirUnsupported">​</a></h4>
+<ul>
+<li>filelib - dir files tree.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="cannotgetdirdata">CanNotGetDirData<a href="#cannotgetdirdata" class="hash-link" aria-label="Direct link to CanNotGetDirData" title="Direct link to CanNotGetDirData">​</a></h4>
+<ul>
+<li>filelib - dir files tree.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="systemdatadirnotfound">SystemDataDirNotFound<a href="#systemdatadirnotfound" class="hash-link" aria-label="Direct link to SystemDataDirNotFound" title="Direct link to SystemDataDirNotFound">​</a></h4>
+<ul>
+<li>filelib - log.</li>
+<li>filelib - password manager.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="cannotgetfileordirtype">CanNotGetFileOrDirType<a href="#cannotgetfileordirtype" class="hash-link" aria-label="Direct link to CanNotGetFileOrDirType" title="Direct link to CanNotGetFileOrDirType">​</a></h4>
+<ul>
+<li>filelib - dir files tree.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="cannotgetjsonobject">CanNotGetJsonObject<a href="#cannotgetjsonobject" class="hash-link" aria-label="Direct link to CanNotGetJsonObject" title="Direct link to CanNotGetJsonObject">​</a></h4>
+<ul>
+<li>filelib - read json.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="invalidjson">InvalidJson<a href="#invalidjson" class="hash-link" aria-label="Direct link to InvalidJson" title="Direct link to InvalidJson">​</a></h4>
+<ul>
+<li>filelib - read json.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="invalidkey">InvalidKey<a href="#invalidkey" class="hash-link" aria-label="Direct link to InvalidKey" title="Direct link to InvalidKey">​</a></h4>
+<ul>
+<li>encryption manager - encrypt file.</li>
+<li>encryption manager - decrypt file.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="invalidencryptiondata">InvalidEncryptionData<a href="#invalidencryptiondata" class="hash-link" aria-label="Direct link to InvalidEncryptionData" title="Direct link to InvalidEncryptionData">​</a></h4>
+<ul>
+<li>encryption manager - decrypt file.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbconnection">DBConnection<a href="#dbconnection" class="hash-link" aria-label="Direct link to DBConnection" title="Direct link to DBConnection">​</a></h4>
+<ul>
+<li>dblib - log.</li>
+<li>dblib - password manager.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbinsert">DBInsert<a href="#dbinsert" class="hash-link" aria-label="Direct link to DBInsert" title="Direct link to DBInsert">​</a></h4>
+<ul>
+<li>dblib - log.</li>
+<li>dblib - password manager.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbcreatetable">DBCreateTable<a href="#dbcreatetable" class="hash-link" aria-label="Direct link to DBCreateTable" title="Direct link to DBCreateTable">​</a></h4>
+<ul>
+<li>dblib - log.</li>
+<li>dblib - password manager.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="pmdatabasenotfound">PMDatabaseNotFound<a href="#pmdatabasenotfound" class="hash-link" aria-label="Direct link to PMDatabaseNotFound" title="Direct link to PMDatabaseNotFound">​</a></h4>
+<ul>
+<li>backup manager - backup.</li>
+<li>password manager - count.</li>
+<li>password manager - decrypt.</li>
+<li>password manager - delete.</li>
+<li>password manager - encrypt.</li>
+<li>password manager - find.</li>
+<li>password manager - show.</li>
+<li>password manager - update.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="pmdatabaseempty">PMDatabaseEmpty<a href="#pmdatabaseempty" class="hash-link" aria-label="Direct link to PMDatabaseEmpty" title="Direct link to PMDatabaseEmpty">​</a></h4>
+<ul>
+<li>password manager - show.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lmdatabasenotfound">LMDatabaseNotFound<a href="#lmdatabasenotfound" class="hash-link" aria-label="Direct link to LMDatabaseNotFound" title="Direct link to LMDatabaseNotFound">​</a></h4>
+<ul>
+<li>backup manager - backup.</li>
+<li>log manager - clear.</li>
+<li>log manager - delete.</li>
+<li>log manager - find.</li>
+<li>log manager - show.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lognotfound">LogNotFound<a href="#lognotfound" class="hash-link" aria-label="Direct link to LogNotFound" title="Direct link to LogNotFound">​</a></h4>
+<ul>
+<li>log manager - find.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="input">Input<a href="#input" class="hash-link" aria-label="Direct link to Input" title="Direct link to Input">​</a></h4>
+<ul>
+<li>backup manager - restore.</li>
+<li>encryption manager - decrypt file.</li>
+<li>encryption manager - encrypt file.</li>
+<li>password manager - generate.</li>
+<li>password manager - save.</li>
+<li>password manager - update.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="missingarg">MissingArg<a href="#missingarg" class="hash-link" aria-label="Direct link to MissingArg" title="Direct link to MissingArg">​</a></h4>
+<ul>
+<li>backup manager - backup.</li>
+<li>backup manager - restore.</li>
+<li>matcheslibs - mod.</li>
+<li>password manager - update.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="confirmationnotmatch">ConfirmationNotMatch<a href="#confirmationnotmatch" class="hash-link" aria-label="Direct link to ConfirmationNotMatch" title="Direct link to ConfirmationNotMatch">​</a></h4>
+<ul>
+<li>utilities - confirm.</li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/usage/log-manager"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Log Manager</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#exit-codes" class="table-of-contents__link toc-highlight">Exit Codes:</a></li><li><a href="#xpmanager-exit-codes" class="table-of-contents__link toc-highlight">XPManager Exit Codes:</a></li><li><a href="#where" class="table-of-contents__link toc-highlight">Where:</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 XPManager Project. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
