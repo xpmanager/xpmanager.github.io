@@ -9,18 +9,23 @@ sidebar_position: 1
 Follow the steps below to install XPManager on your system based on your operating system.
 
 ## Linux
-
-- Go to the [Release](https://github.com/Mohaned2023/XPManager/releases) page and download the latest version of XPManager for Linux.
-- Open a terminal and run the following commands:
-
+### using .deb package:
 ```sh
-chmod +x xpm
-sudo mv xpm /usr/local/bin
+$ sudo dpkg -i xpmanager.deb
+```
+
+### using bin file:
+- Go to the [Release](https://github.com/xpmanager/XPManager/releases) page and download the latest version of XPManager for Linux.
+- Decompress the file.
+- Move the xpm bin to `/usr/local/bin`:
+```sh
+$ chmod +x xpmnager/bin/xpm
+$ sudo mv xpmnager/bin/xpm /usr/local/bin
 ```
 
 ## Windows
 
-- Download the latest version of XPManager from the [Release](https://github.com/Mohaned2023/XPManager/releases) page.
+- Download the latest version of XPManager from the [Release](https://github.com/xpmanager/XPManager/releases) page.
 - Extract the contents and move the XPManager folder to your system drive (e.g., C:\XPManager).
 - Add the `bin` folder to your system's PATH:
   - Open Environment Variables settings:
@@ -30,13 +35,19 @@ sudo mv xpm /usr/local/bin
   - Add the path to the `XPManager\bin` folder (e.g., C:\XPManager\bin).
   - Click **OK** to save changes.
 
+## From Crates.io:
+```sh
+$ cargo install XPManager
+$ xpm --version
+```
+
 ## From Source
 
 - You need to install **Rust** and **Cargo** on your system.
 - Clone the repo:
 
 ```sh
-$ git clone https://github.com/Mohaned2023/XPManager.git
+$ git clone https://github.com/xpmanager/XPManager.git
 $ cd XPManager
 ```
 

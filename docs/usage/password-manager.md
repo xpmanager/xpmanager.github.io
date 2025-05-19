@@ -65,6 +65,42 @@ $ xpm password-manager|pm generate|g <LENGTH> --save <name>
 # Example:
 $ xpm pm g 33 --save "github account"
 ```
+
+- generate without symbols (e.g. a-z, A-Z, 0-9)
+```sh
+$ xpm password-manager|pm generate|g <LENGTH> --no-symbols
+
+# Example:
+$ xpm pm g 33 --no-symbols
+```
+
+- add custom set to the sample
+```sh
+$ xpm password-manager|pm generate|g <LENGTH> --add-set <STRING>
+
+# Example:
+$ xpm pm g 33 --add-set "$%@"
+```
+:::info
+- You can NOT use space in the set.
+- This will add the sample `$%@` to the app sample, in this case we generate as ASCII so 
+it will and the set at the end of the ASCII sample.
+- The output is random, so it might NOT contain any character from the custom set.
+:::
+
+- add custom sample
+```sh
+$ xpm password-manager|pm generate|g <LENGTH> --custom <STRING>
+
+# Example:
+$ xpm pm g 33 --custom "abc123#$@!"
+```
+:::info
+- You can NOT use space in the sample.
+- This will generate password with length 33 from the `abc123#$@!` only.
+:::
+
+
 --- 
 ### Save
 

@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'XPManager',
-  tagline: 'Password manager and generator, file and folder encryptor.',
+  tagline: 'A fast and efficient CLI tool for managing passwords and encrypting sensitive data.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
