@@ -74,7 +74,7 @@ const config = {
           },
           {
             label: 'GitHub Discussions',
-            href: 'https://github.com/xpmanager/discussions',
+            href: 'https://github.com/orgs/xpmanager/discussions',
             position: 'right',
           },
           {
