@@ -66,13 +66,16 @@ $ xpm password-manager|pm generate|g <LENGTH> --save <name>
 $ xpm pm g 33 --save "github account"
 ```
 
-- generate without symbols (e.g. a-z, A-Z, 0-9)
+- generate without symbols
 ```sh
 $ xpm password-manager|pm generate|g <LENGTH> --no-symbols
 
 # Example:
 $ xpm pm g 33 --no-symbols
 ```
+:::info
+- This will generate password as letters and numbers without symbols.
+:::
 
 - add custom set to the sample
 ```sh
@@ -84,11 +87,11 @@ $ xpm pm g 33 --add-set "$%@"
 :::info
 - You can NOT use space in the set.
 - This will add the sample `$%@` to the app sample, in this case we generate as ASCII so 
-it will and the set at the end of the ASCII sample.
+it will add the set at the end of the ASCII sample.
 - The output is random, so it might NOT contain any character from the custom set.
 :::
 
-- add custom sample
+- generate from custom sample
 ```sh
 $ xpm password-manager|pm generate|g <LENGTH> --custom <STRING>
 
