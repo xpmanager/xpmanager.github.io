@@ -6,12 +6,14 @@ sidebar_position: 1
 
 It's good to have a CLI tool that manages your passwords and lets you control them and quickly create new passwords of various sizes to suit your needs. This is where XPManager comes in to help you manage passwords, and also allows you to work with files/folders and secure them with the **Fernet** encryption.
 
-## What's New in v2.2.0?
+## What's New in v2.3.0?
 
-- Fix: password manager log registration logic.
-- New: generate password with no symbols, see [generate](./usage/password-manager#generate).
-- New: add custom set to password generate sample, see [generate](./usage/password-manager#generate).
-- New: generate password from a custom sample, see [generate](./usage/password-manager#generate).
+- Fix: 
+    - Decoded string display.
+- New: 
+    - Encryption and decryption directory with threads (default behavior), see [encryption manager](./usage/encryption-manager).
+    - Encryption and decryption directory without threads (`--no-threads`), 
+    see [encrypt directory](./usage/encryption-manager#encrypt-directory) and [decrypt directory](./usage/encryption-manager#decrypt-directory).
 
 ## Getting Started
 

@@ -15,6 +15,13 @@ files which means we read a certain part of the file and then encryp it, this ta
 allows us to process huge files quickly and effciently. Use **xpmv1** if you have file 
 was encrypted by the old version of **XPManager** (XPManager v1.x.x).
 
+:::note
+In the **directory** encryption and decryption we use threads to speed up the process. 
+It can make the CPU work at its maximum potential, to avoid this use `--no--threads` 
+to make the process only on the main thread this may lead to a decrease in the speed 
+of the tool.
+:::
+
 ## Commands
 
 ### Encrypt File
@@ -111,6 +118,13 @@ $ xpm em def "./path/old-file.txt.x" --xpmv1
 
 Encrypt all files in a directory.
 
+:::note
+By default we use **threads**, to avoid that use `--no-threads`.
+```sh
+$ xpm encryption-manager|em encrypt-dir|end <PATH> --no-threads
+```
+:::
+
 - encrypt directory with auto-generated key
 ```sh
 $ xpm encryption-manager|em encrypt-dir|end <PATH>
@@ -163,6 +177,13 @@ $ xpm em end "./path/folder" --key --delete
 ### Decrypt Directory
 
 Decrypt all files in a directory that were encrypted with Fernet encryption.
+
+:::note
+By default we use **threads**, to avoid that use `--no-threads`.
+```sh
+$ xpm encryption-manager|em decrypt-dir|ded <PATH> --no-threads
+```
+:::
 
 - decrypt decrypt
 ```sh
