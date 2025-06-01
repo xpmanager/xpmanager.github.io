@@ -43,6 +43,16 @@ const sidebars = {
       label: 'Error Codes',
       items: ['errors/error-codes'],
     },
+    {
+      type: 'category',
+      label: 'Versions',
+      items: [
+        'versions/v2.3.0',
+        'versions/v2.2.0',
+        'versions/v2.1.0',
+        'versions/v2.0.0',
+      ],
+    },
   ],
 };
 
